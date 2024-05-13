@@ -6,7 +6,7 @@ const routes: Routes = [
     { path: 'customers', loadChildren: () => import('./customers/customers.module').then(m => m.CustomersModule) },
     { path: 'orders', loadChildren: () => import('./orders/orders.module').then(m => m.OrdersModule) },
     { path: 'crud', loadChildren: () => import('./crud/crud.module').then(m => m.CrudModule) },
-    //{ path: '**', component: NoPageFoundComponentComponent },
+    { path: '**', component: NoPageFoundComponentComponent },
 ];
 
 @NgModule({
